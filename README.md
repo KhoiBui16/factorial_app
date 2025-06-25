@@ -5,13 +5,20 @@ A secure and user-friendly Streamlit application that calculates the factorial o
 ---
 
 ## 📑 Table of Contents
-1. [📁 Project Structure](#-project-structure)
-2. [🔐 Features](#-features)
-3. [📦 Example Usage](#-example-usage)
-4. [🚀 Getting Started](#-getting-started)
-5. [☁️ Deploying on Streamlit Cloud](#deploying-on-streamlit-cloud)
-6. [🛠 Tech Stack](#-tech-stack)
-7. [📬 Contact](#-contact)
+- [📦 Factorial App](#-factorial-app)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [📁 Project Structure](#-project-structure)
+  - [🔐 Features](#-features)
+  - [📦 Example Usage](#-example-usage)
+  - [🚀 Getting Started](#-getting-started)
+    - [1. Clone the repository](#1-clone-the-repository)
+    - [2. Set up your environment](#2-set-up-your-environment)
+    - [3. Install dependencies](#3-install-dependencies)
+    - [4. Run the app](#4-run-the-app)
+    - [🔐 Note](#-note)
+  - [☁Deploying on Streamlit Cloud](#deploying-on-streamlit-cloud)
+  - [🛠 Tech Stack](#-tech-stack)
+  - [📬 Contact](#-contact)
 ---
 
 ## 📁 Project Structure
@@ -81,6 +88,14 @@ streamlit run app.py
 ```bash
 http://localhost:8501
 ```
+---
+
+### 🔐 Note
+
+> Do **not** push `users.json` to GitHub.  
+> It contains sensitive user data.  
+> Instead, copy from `users_template.json` to create your own `users.json`.
+
 ---
 
 ## ☁Deploying on Streamlit Cloud
