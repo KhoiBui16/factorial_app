@@ -15,7 +15,7 @@ A secure and user-friendly Streamlit application that calculates the factorial o
     - [2. Set up your environment](#2-set-up-your-environment)
     - [3. Install dependencies](#3-install-dependencies)
     - [4. Run the app](#4-run-the-app)
-    - [🔐 Note](#-note)
+  - [🔐 Note](#-note)
   - [☁Deploying on Streamlit Cloud](#deploying-on-streamlit-cloud)
   - [🛠 Tech Stack](#-tech-stack)
   - [📬 Contact](#-contact)
@@ -90,7 +90,7 @@ http://localhost:8501
 ```
 ---
 
-### 🔐 Note
+## 🔐 Note
 
 > Do **not** push `users.json` to GitHub.  
 > It contains sensitive user data.  
