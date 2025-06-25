@@ -1,42 +1,48 @@
 # 📦 Factorial App
 
-**A simple Streamlit app to calculate the factorial of a number.**
-
-- ✅ Minimum input: `0`
-- ✅ Maximum input: `900` (beyond this may cause overflow or delay)
-- ⚠️ Values above `900` are restricted to prevent memory overflow.
-- 🚀 Built using: `Python` + `Streamlit`
+A secure and user-friendly Streamlit application that calculates the factorial of a number, with built-in user authentication and admin access control.
 
 ---
 
 ## 📑 Table of Contents
 1. [📁 Project Structure](#-project-structure)
-2. [💡 How It Works](#-how-it-works)
-3. [📦 Example](#-example)
+2. [🔐 Features](#-features)
+3. [📦 Example Usage](#-example-usage)
 4. [🚀 Getting Started](#-getting-started)
-5. [☁️ Deploy to Streamlit Cloud](#deploy-to-streamlit-cloud)
+5. [☁️ Deploying on Streamlit Cloud](#deploying-on-streamlit-cloud)
 6. [🛠 Tech Stack](#-tech-stack)
 7. [📬 Contact](#-contact)
-
 ---
 
 ## 📁 Project Structure
 factorial_app/
 
-├── app.py            
-├── factorial.py        
-├── requirements.txt   
+├── app.py               
+├── auth.py              
+├── factorial.py         
+├── user_utils.py        
+├── users.json          
+├── requirements.txt     
 └── README.md          
 
-## 💡 How It Works
-- Enter any number between 0 and 900 into the input field.
-- Click the "Calculate" button.
-- The app will display the result of n! (n factorial).
-- If input is invalid or too large, it shows an error message.
+---
 
-## 📦 Example
+## 🔐 Features
+
+- User registration and login
+- Passwords securely stored using SHA-256 hashing
+- Admin panel:
+  - Approve/reject user access (`allowed`)
+  - Delete users
+- Users can only access functionality after admin approval
+- Seamless single-page app for both normal users and admins
+
+---
+
+## 📦 Example Usage
 - Input: 5
 - Output: The factorial of 5 is 120
+- **Restrictions:** Input must be between 0 and 900 (to prevent overflow
 
 ## 🚀 Getting Started
 Follow these steps to clone and run app on your local machine.
@@ -77,7 +83,7 @@ http://localhost:8501
 ```
 ---
 
-## ☁Deploy to Streamlit Cloud
+## ☁Deploying on Streamlit Cloud
 - Want to make your app public online?
 - Push your project to a public GitHub repository.
 - Go to [Streamlit Cloud](https://streamlit.io/cloud)
@@ -92,6 +98,5 @@ http://localhost:8501
 
 ## 📬 Contact
 For suggestions, feedback, or contributions:
-+ Open an Issue
-+ Submit a Pull Request
-+ Or reach out via email: khoibui1601.email@example.com
++ 📧 Email: khoibui1601.email@example.com
++ 🐛 Report an issue or submit a pull request
