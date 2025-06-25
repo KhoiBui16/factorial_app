@@ -23,3 +23,14 @@ def is_admin():
 
 def is_allowed():
     return st.session_state.get("allowed", False)
+
+def ensure_admin_user():
+    users = load_users()
+    if not any(u.get("is_admin", False) for u in users):
+        users.append({
+            "username": "admin",
+            "password": "admin",
+            "is_admin": True,
+            "allowed": True
+        })
+        save_users(users)

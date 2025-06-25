@@ -1,8 +1,9 @@
 # auth.py
 import streamlit as st
-from user_utils import load_users, save_users
+from user_utils import load_users, save_users, ensure_admin_user
 
 def login_page():
+    ensure_admin_user()  # đảm bảo có admin trước khi login
     st.title("Đăng nhập")
     username = st.text_input("Tên đăng nhập")
     password = st.text_input("Mật khẩu", type="password")
